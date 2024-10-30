@@ -1,0 +1,34 @@
+{
+    "name": "ytaha/intellibuilder",
+    "description": "IntelliBuilder is a WordPress plugin that control who sees your content based on user rules, web-based rules, and scheduled time.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Yaseen Taha",
+            "email": "showyaseen@hotmail.com",
+            "homepage": "https://wordpress.com/plugins/intellibuilder"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+		"hisorange/browser-detect": "^4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "YTAHA\\IntelliBuilder\\": "includes/"
+        }
+    },
+    "scripts": {
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

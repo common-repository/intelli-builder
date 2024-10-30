@@ -1,0 +1,40 @@
+{
+	"name": "intelli-builder",
+	"version": "1.0.0",
+	"description": "IntelliBuilder is a WordPress plugin that control who sees your content based on user rules, web-based rules, and scheduled time.",
+	"author": "Yaseen Taha",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "webpack --config webpack.config.js",
+		"watch": "webpack --watch",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"keywords": [
+		"wordpress",
+		"plugin",
+		"Gutenberg",
+		"Blocks",
+		"Visibility Control",
+		"Conditional Content"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.24.7",
+		"@babel/preset-env": "^7.24.7",
+		"babel-loader": "^8.3.0",
+		"css-loader": "^5.2.6",
+		"webpack": "^5.37.1",
+		"webpack-cli": "^5.1.4"
+	},
+	"dependencies": {
+		"@emotion/styled": "^11.11.5",
+		"@wordpress/icons": "^10.2.0",
+		"@wordpress/scripts": "^27.9.0",
+		"copy-webpack-plugin": "^12.0.2",
+		"react-select": "^5.8.0"
+	}
+}
